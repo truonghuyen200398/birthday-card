@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Cốt</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+overflow:hidden;
+background:#111827;
+color:white;
+}
+
+#bg{
+position:fixed;
+inset:0;
+background:url("photo.jpg") center center/cover no-repeat;
+filter:brightness(.45);
+animation:zoom 20s ease-in-out infinite alternate;
+}
+
+@keyframes zoom{
+from{transform:scale(1);}
+to{transform:scale(1.12);}
+}
+
+#overlay{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.35);
+}
+
+#intro,
+#card{
+position:fixed;
+inset:0;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:25px;
+text-align:center;
+}
+
+#card{
+display:none;
+overflow:auto;
+}
+
+.box{
+
+max-width:850px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(12px);
+
+padding:40px;
+
+border-radius:25px;
+
+box-shadow:0 0 40px rgba(255,215,0,.15);
+
+}
+
+h1{
+
+font-size:50px;
+
+margin-bottom:15px;
+
+}
+
+h2{
+
+font-size:30px;
+
+margin-bottom:25px;
+
+font-weight:400;
+
+}
+
+button{
+
+padding:15px 35px;
+
+border:none;
+
+border-radius:40px;
+
+background:#FACC15;
+
+font-size:18px;
+
+cursor:pointer;
+
+font-weight:bold;
+
+transition:.3s;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+}
+
+.title{
+
+font-size:42px;
+
+color:#FACC15;
+
+margin-bottom:8px;
+
+}
+
+.date{
+
+font-size:22px;
+
+margin-bottom:30px;
+
+opacity:.9;
+
+}
+
+.line{
+
+opacity:0;
+
+transform:translateY(20px);
+
+font-size:20px;
+
+line-height:2;
+
+margin:18px 0;
+
+}
+
+.show{
+
+animation:fade 1s forwards;
+
+}
+
+@keyframes fade{
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.sign{
+
+opacity:0;
+
+font-size:24px;
+
+margin-top:35px;
+
+color:#FACC15;
+
+}
+
+.star{
+
+position:fixed;
+
+pointer-events:none;
+
+color:#FFD54F;
+
+opacity:.7;
+
+animation:fly linear infinite;
+
+}
+
+@keyframes fly{
+
+from{
+
+transform:translateY(100vh);
+
+}
+
+to{
+
+transform:translateY(-100px);
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="bg"></div>
+
+<div id="overlay"></div>
+
+<div id="intro">
+
+<div class="box">
+
+<h1>🎂</h1>
+
+<h2>Happy Birthday<br>Cốt Mai Linh</h2>
+
+<p style="margin-bottom:30px;font-size:22px">
+
+10 / 07
+
+</p>
+
+<button onclick="openCard()">
+
+💌 MỞ THIỆP
+
+</button>
+
+</div>
+
+</div>
+
+<div id="card">
+
+<div class="box">
+
+<div class="title">
+
+🎉 Happy Birthday
+
+</div>
+
+<div class="date">
+
+Cốt Mai Linh • 10/07
+
+</div>
+
+<div class="line">
+
+Hôm nay là một ngày thật đặc biệt.
+
+</div>
+
+<div class="line">
+
+Tui chúc Cốt có một sinh nhật thật nhiều niềm vui, thật nhiều tiếng cười và đón một tuổi mới với thật nhiều điều đáng mong đợi.
+
+</div>
+
+<div class="line">
+
+Cảm ơn Cốt vì đã luôn là một người bạn tuyệt vời. Cảm ơn vì những lần cùng nhau trò chuyện, chia sẻ, động viên nhau và tạo nên rất nhiều kỷ niệm đẹp.
+
+</div>
+
+  <div class="line">
+
+Mong rằng tuổi mới sẽ mang đến cho Cốt thật nhiều sức khỏe, bình an, may mắn và thành công trong mọi điều mình theo đuổi.
+
+</div>
+
+<div class="line">
+
+Dù cuộc sống có bận rộn đến đâu, tui cũng hy vọng Cốt sẽ luôn giữ được nụ cười và tận hưởng những điều nhỏ bé nhưng hạnh phúc mỗi ngày.
+
+</div>
+
+<div class="line">
+
+Và tui cũng hy vọng rằng, phía trước sẽ còn thật nhiều cơ hội để tụi mình tiếp tục đồng hành, cùng nhau tạo thêm thật nhiều kỷ niệm đẹp.
+
+</div>
+
+<div class="line">
+
+Cuối cùng, chúc Cốt luôn xinh đẹp, hạnh phúc, làm điều gì cũng thuận lợi và luôn có những người yêu thương ở bên cạnh.
+
+</div>
+
+<div class="line">
+
+✨ Chúc mừng sinh nhật Cốt! Happy Birthday! 🎂🎉
+
+</div>
+
+<div class="line">
+
+10/07 thật rực rỡ nhé! Mong mọi điều tốt đẹp sẽ luôn mỉm cười với Cốt, không chỉ trong hôm nay mà còn trong cả tuổi mới phía trước.
+
+</div>
+
+<div class="sign">
+
+— Huyền 💛
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function openCard(){
+
+document.getElementById("intro").style.display="none";
+
+document.getElementById("card").style.display="flex";
+
+const music=new Audio("music.mp3");
+
+music.loop=true;
+
+music.play().catch(()=>{});
+
+const lines=document.querySelectorAll(".line");
+
+lines.forEach((item,index)=>{
+
+setTimeout(()=>{
+
+item.classList.add("show");
+
+},index*2200);
+
+});
+
+setTimeout(()=>{
+
+document.querySelector(".sign").classList.add("show");
+
+},lines.length*2200);
+
+for(let i=0;i<35;i++){
+
+const star=document.createElement("div");
+
+star.className="star";
+
+star.innerHTML=Math.random()>0.5?"✨":"⭐";
+
+star.style.left=Math.random()*100+"%";
+
+star.style.fontSize=(12+Math.random()*18)+"px";
+
+star.style.animationDuration=(6+Math.random()*8)+"s";
+
+star.style.animationDelay=Math.random()*5+"s";
+
+document.body.appendChild(star);
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>
