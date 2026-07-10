@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Cốt</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html,body{
+width:100%;
+height:100%;
+overflow-x:hidden;
+font-family:"Segoe UI",sans-serif;
+background:#111;
+}
+
+body{
+position:relative;
+}
+
+.background{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+background:url("photo.jpg") center center/cover no-repeat;
+
+filter:brightness(.45);
+
+animation:zoom 18s ease-in-out infinite alternate;
+
+z-index:-3;
+
+}
+
+@keyframes zoom{
+
+from{
+transform:scale(1);
+}
+
+to{
+transform:scale(1.12);
+}
+
+}
+
+.overlay{
+
+position:fixed;
+
+inset:0;
+
+background:linear-gradient(rgba(0,0,0,.15),rgba(0,0,0,.55));
+
+z-index:-2;
+
+}
+
+.container{
+
+width:100%;
+
+min-height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+padding:25px;
+
+}
+
+.card{
+
+width:100%;
+
+max-width:850px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(14px);
+
+border-radius:28px;
+
+padding:45px;
+
+color:white;
+
+box-shadow:0 0 35px rgba(255,215,0,.15);
+
+text-align:center;
+
+}
+
+#mainCard{
+
+display:none;
+
+}
+
+h1{
+
+font-size:52px;
+
+margin-bottom:15px;
+
+}
+
+.subtitle{
+
+font-size:24px;
+
+opacity:.95;
+
+margin-bottom:30px;
+
+}
+
+.date{
+
+font-size:20px;
+
+margin-bottom:35px;
+
+color:#FFD54F;
+
+}
+
+button{
+
+padding:16px 40px;
+
+font-size:18px;
+
+border:none;
+
+border-radius:40px;
+
+cursor:pointer;
+
+background:#FACC15;
+
+color:#222;
+
+font-weight:bold;
+
+transition:.35s;
+
+}
+
+button:hover{
+
+transform:scale(1.05);
+
+}
+
+.title{
+
+font-size:42px;
+
+color:#FFD54F;
+
+margin-bottom:10px;
+
+}
+
+.line{
+
+opacity:0;
+
+transform:translateY(30px);
+
+font-size:20px;
+
+line-height:1.9;
+
+margin:18px 0;
+
+}
+
+.show{
+
+animation:fade .9s forwards;
+
+}
+
+@keyframes fade{
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
+
+.sign{
+
+margin-top:35px;
+
+font-size:26px;
+
+color:#FFD54F;
+
+opacity:0;
+
+}
+
+.star{
+
+position:fixed;
+
+pointer-events:none;
+
+color:#FFD54F;
+
+opacity:.8;
+
+animation:fly linear infinite;
+
+}
+
+@keyframes fly{
+
+from{
+
+transform:translateY(100vh);
+
+}
+
+to{
+
+transform:translateY(-120px);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.card{
+
+padding:28px;
+
+}
+
+h1{
+
+font-size:38px;
+
+}
+
+.subtitle{
+
+font-size:20px;
+
+}
+
+.title{
+
+font-size:32px;
+
+}
+
+.date{
+
+font-size:18px;
+
+}
+
+.line{
+
+font-size:17px;
+
+line-height:1.8;
+
+}
+
+button{
+
+width:100%;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="overlay"></div>
+
+<div class="container" id="intro">
+
+<div class="card">
+
+<h1>🎂</h1>
+
+<div class="subtitle">
+
+Happy Birthday<br>
+
+Cốt Mai Linh
+
+</div>
+
+<div class="date">
+
+10 / 07
+
+</div>
+
+<button onclick="openCard()">
+
+💌 MỞ THIỆP
+
+</button>
+
+</div>
+
+</div>
+
+<div class="container" id="mainCard">
+
+<div class="card">
+
+<div class="title">
+
+🎉 Happy Birthday
+
+</div>
+
+<div class="date">
+
+Cốt Mai Linh • 10/07
+
+</div>
+
+<div class="line">
+
+Hôm nay là một ngày thật đặc biệt.
+
+</div>
+
+<div class="line">
+
+Tui chúc Cốt có một sinh nhật thật nhiều niềm vui, thật nhiều tiếng cười và đón một tuổi mới với thật nhiều điều đáng mong đợi.
+
+</div>
+
+  <div class="line">
+
+Cảm ơn Cốt vì đã luôn là một người bạn tuyệt vời. Cảm ơn vì những lần cùng nhau trò chuyện, chia sẻ, động viên nhau và tạo nên rất nhiều kỷ niệm đẹp.
+
+</div>
+
+<div class="line">
+
+Mong rằng tuổi mới sẽ mang đến cho Cốt thật nhiều sức khỏe, bình an, may mắn và thành công trong mọi điều mình theo đuổi.
+
+</div>
+
+<div class="line">
+
+Dù cuộc sống có bận rộn đến đâu, tui cũng hy vọng Cốt sẽ luôn giữ được nụ cười và tận hưởng những điều nhỏ bé nhưng hạnh phúc mỗi ngày.
+
+</div>
+
+<div class="line">
+
+Và tui cũng hy vọng rằng, phía trước sẽ còn thật nhiều cơ hội để tụi mình tiếp tục đồng hành, cùng nhau tạo thêm thật nhiều kỷ niệm đẹp.
+
+</div>
+
+<div class="line">
+
+Cuối cùng, chúc Cốt luôn xinh đẹp, hạnh phúc, làm điều gì cũng thuận lợi và luôn có những người yêu thương ở bên cạnh.
+
+</div>
+
+<div class="line">
+
+✨ Chúc mừng sinh nhật Cốt! Happy Birthday! 🎂🎉
+
+</div>
+
+<div class="line">
+
+10/07 thật rực rỡ nhé! Mong mọi điều tốt đẹp sẽ luôn mỉm cười với Cốt, không chỉ trong hôm nay mà còn trong cả tuổi mới phía trước.
+
+</div>
+
+<div class="sign">
+
+— Huyền 💛
+
+</div>
+
+</div>
+
+</div>
+
+<script>
+
+function openCard(){
+
+document.getElementById("intro").style.display="none";
+
+document.getElementById("mainCard").style.display="flex";
+
+const music=new Audio("music.mp3");
+
+music.loop=true;
+
+music.play().catch(()=>{});
+
+showLines();
+
+createStars();
+
+}
+
+function showLines(){
+
+const lines=document.querySelectorAll(".line");
+
+lines.forEach((item,index)=>{
+
+setTimeout(()=>{
+
+item.classList.add("show");
+
+},index*1800);
+
+});
+
+setTimeout(()=>{
+
+document.querySelector(".sign").classList.add("show");
+
+},lines.length*1800);
+
+}
+
+  function createStars(){
+
+for(let i=0;i<40;i++){
+
+const star=document.createElement("div");
+
+star.className="star";
+
+star.innerHTML=Math.random()>0.5?"✨":"⭐";
+
+star.style.left=Math.random()*100+"%";
+
+star.style.top=Math.random()*100+"%";
+
+star.style.fontSize=(12+Math.random()*18)+"px";
+
+star.style.animationDuration=(6+Math.random()*8)+"s";
+
+star.style.animationDelay=Math.random()*5+"s";
+
+document.body.appendChild(star);
+
+}
+
+animateStars();
+
+}
+
+function animateStars(){
+
+const stars=document.querySelectorAll(".star");
+
+stars.forEach(star=>{
+
+star.animate([
+
+{
+
+transform:"translateY(100vh)",
+
+opacity:0
+
+},
+
+{
+
+opacity:.8
+
+},
+
+{
+
+transform:"translateY(-120px)",
+
+opacity:0
+
+}
+
+],{
+
+duration:6000+Math.random()*5000,
+
+iterations:Infinity,
+
+delay:Math.random()*5000
+
+});
+
+});
+
+}
+
+window.onload=function(){
+
+document.getElementById("intro").style.display="flex";
+
+}
+
+</script>
+
+</body>
+
+</html>
